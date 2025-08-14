@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name – Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name, showcasing projects, skills, and contact information." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- 🌐 Header Section -->
+  <header role="banner">
+    <div id="hamburger">☰</div>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="dark-toggle">🌙</button>
+  </header>
+
+  <!-- 👤 About Me Section -->
+  <section id="about-me">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate web developer with a love for clean code, intuitive design, and solving real-world problems through technology. I enjoy learning new tools and collaborating on creative projects.
+    </p>
+  </section>
+
+  <!-- 🧪 Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+      <figure>
+        <img src="https://via.placeholder.com/300x200.png?text=Project+1" alt="Screenshot of Project 1" />
+        <figcaption>Project 1: Weather App</figcaption>
+      </figure>
+      <p>A responsive weather application using OpenWeather API and vanilla JavaScript.</p>
+    </article>
+
+    <article>
+      <figure>
+        <img src="https://via.placeholder.com/300x200.png?text=Project+2" alt="Screenshot of Project 2" />
+        <figcaption>Project 2: Portfolio Website</figcaption>
+      </figure>
+      <p>A personal portfolio built with HTML, CSS, and GitHub Pages.</p>
+    </article>
+  </section>
+
+  <!-- 🛠️ Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li><i class="fas fa-code"></i> HTML5</li>
+      <li><i class="fab fa-css3-alt"></i> CSS3</li>
+      <li><i class="fab fa-js-square"></i> JavaScript</li>
+      <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+      <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+      <li><i class="fas fa-universal-access"></i> Accessibility (WCAG)</li>
+    </ul>
+  </section>
+
+  <!-- 📬 Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- 🧾 Footer -->
+  <footer>
+    <p>© 2025 Your Name</p>
+    <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+    <a href="mailto:you@example.com"><i class="fas fa-envelope"></i></a>
+  </footer>
+
+  <!-- 🔗 Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
