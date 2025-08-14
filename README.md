@@ -4,7 +4,7 @@ Welcome to my personal portfolio website, built with HTML, CSS, and JavaScript, 
 
 ## 🌐 Live Demo
 
-🔗 [Visit My Portfolio](https://yourusername.github.io)
+🔗 [Visit My Portfolio](https://frankthecodeboy.github.io)
 
 ## 📌 About
 
@@ -43,8 +43,8 @@ This portfolio showcases my skills, projects, and contact information. It was de
 
 Feel free to reach out via:
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: [you@example.com](mailto:you@example.com)
+- GitHub: [@frankthecodeboy](https://github.com/frankthecodeboy)
+- Email: [olumfrank48@gmail.com](mailto:olumfrank48@gmail.com)
 
 ---
 
