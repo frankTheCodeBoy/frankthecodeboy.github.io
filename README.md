@@ -1,4 +1,4 @@
-# Developer Portfolio – Your Name
+# Developer Portfolio – Frank Olum
 
 Welcome to my personal portfolio website, built with HTML, CSS, and JavaScript, and hosted on GitHub Pages.
 
