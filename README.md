@@ -43,14 +43,14 @@ A complete end-to-end data science project showcasing your skills in data wrangl
 
 ---
 
-### 🧠 [ML_Clustering_Project](https://github.com/frankTheCodeBoy/ML_Clustering_Project)
+### 🧠 [ML_Clustering_Project](https://github.com/frankTheCodeBoy/Data_Science_Machine_Learning_Analysis)
 Unsupervised learning project using clustering algorithms to uncover hidden patterns in real-world datasets.  
 **Tech:** Python, Scikit-learn, Seaborn, GeoJSON  
 📊 Includes interactive visualizations and mapping.
 
 ---
 
-### 🎮 [Pygame_Space_Shooter](https://github.com/frankTheCodeBoy/Pygame_Space_Shooter)
+### 🎮 [Pygame_Space_Shooter](https://github.com/frankTheCodeBoy/Pygame_game_Development)
 A modular arcade-style space shooter game built with Pygame.  
 **Tech:** Python, Pygame  
 🕹️ Replayable, customizable, and fun to dissect.
@@ -64,7 +64,7 @@ Full-stack web app focused on secure authentication and user management.
 
 ---
 
-### 📊 [GeoJSON_Visualizer](https://github.com/frankTheCodeBoy/GeoJSON_Visualizer)
+### 📊 [GeoJSON_Visualizer](https://github.com/frankTheCodeBoy/Realtime_API_Data_And_Earthquakes_Visualisation)
 Interactive map-based data visualizer using GeoJSON and Plotly.  
 **Tech:** Python, Plotly, GeoJSON  
 🌍 Great for spatial data storytelling and dashboards.
