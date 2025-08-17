@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.png" alt="Frank The Code Boy Banner" />
+</p>
+
 <h1 align="center">Frank The Code Boy 🚀</h1>
 <p align="center">
   <em>Developer • Data Analyst • Visual Storyteller • Open Source Craftsman</em><br>
@@ -16,6 +20,21 @@ I believe in:
 - 🎮 Games that teach or entertain  
 - 🌐 Web apps that feel alive  
 - 🛠️ Iterative improvement and discoverability  
+
+---
+
+## 🧰 Tech Stack
+
+![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?logo=pandas&logoColor=white&style=flat)
+![Scikit-learn](https://img.shields.io/badge/-Scikit--learn-F7931E?logo=scikit-learn&logoColor=white&style=flat)
+![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?logo=plotly&logoColor=white&style=flat)
+![GeoJSON](https://img.shields.io/badge/-GeoJSON-006400?style=flat)
+![Pygame](https://img.shields.io/badge/-Pygame-1B1E23?logo=pygame&logoColor=white&style=flat)
+![Django](https://img.shields.io/badge/-Django-092E20?logo=django&logoColor=white&style=flat)
+![C#](https://img.shields.io/badge/-C%23-239120?logo=c-sharp&logoColor=white&style=flat)
+![Blazor](https://img.shields.io/badge/-Blazor-512BD4?logo=blazor&logoColor=white&style=flat)
+![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat)
 
 ---
 
@@ -120,6 +139,13 @@ You can explore my current portfolio site here:
 
 - 📧 Email: `Olumfrank48@gmail.com`  
 - 📱 Tel: `+254 734 633 607`
+
+---
+
+## ⚖️ License
+
+This repository is licensed under the [MIT License](LICENSE).  
+Feel free to fork, adapt, and build upon it — just give credit where it's due.
 
 ---
 
