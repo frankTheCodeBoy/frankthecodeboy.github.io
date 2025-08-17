@@ -67,7 +67,7 @@ Full-stack web app focused on secure authentication and user management.
 ### 📊 [GeoJSON_Visualizer](https://github.com/frankTheCodeBoy/Realtime_API_Data_And_Earthquakes_Visualisation)
 Interactive map-based data visualizer using GeoJSON and Plotly.  
 **Tech:** Python, Plotly, GeoJSON  
-🌍 Great for spatial data storytelling and dashboards.
+🌍 Spatial data storytelling and dashboards.
 
 ---
 
@@ -118,7 +118,7 @@ You can explore my current portfolio site here:
 
 ## 📬 Contact Me
 
-- 📧 Email: `Olumfrank48 [at] gmail [dot] com`  
+- 📧 Email: `Olumfrank48@gmail.com`  
 - 📱 Tel: `+254 734 633 607`
 
 ---
