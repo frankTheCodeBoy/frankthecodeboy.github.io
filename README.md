@@ -8,6 +8,12 @@
   <strong>Building modular, interactive, and visually polished tech — one repo at a time.</strong>
 </p>
 
+<p align="center">
+  <a href="https://frankthecodeboy.github.io/" target="_blank">
+    <img src="https://img.shields.io/badge/Visit-My_GitHub_Pages_Site-blue?style=for-the-badge" alt="Visit GitHub Pages Site Badge" />
+  </a>
+</p>
+
 ---
 
 ## 🧠 Who Am I?
