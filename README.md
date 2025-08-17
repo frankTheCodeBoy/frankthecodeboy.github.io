@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner_compressed.png" alt="Frank The Code Boy Banner" />
+  <img src="banner_image.png" alt="Frank The Code Boy Banner" />
 </p>
 
 <h1 align="center">Frank The Code Boy 🚀</h1>
