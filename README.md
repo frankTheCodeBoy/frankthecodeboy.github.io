@@ -49,7 +49,7 @@ I believe in:
 <p align="center">
   <img src="https://img.shields.io/badge/Google-Data_Analytics_Professional_Certificate-yellow?logo=Google&style=flat-square" />
   <img src="https://img.shields.io/badge/IBM-Data_Science_Professional_Certificate-blue?logo=IBM&style=flat-square" />
-  <img src="https://img.shields.io/badge/Microsoft-Full_Stack_Developer_Certificate_(Security_&_Auth)-green?logo=Microsoft&style=flat-square" />
+  <img src="https://img.shields.io/badge/Microsoft-Full_Stack_Developer_Professional_Certificate-green?logo=Microsoft&style=flat-square" />
 </p>
 
 <p align="center">
