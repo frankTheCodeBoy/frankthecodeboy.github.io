@@ -1,109 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AI Workflow Mastery & Prompt Innovation Award</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: #f4f6f9;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .certificate {
-      position: relative;
-      background: #fff;
-      border: 8px solid #2c3e50;
-      border-radius: 16px;
-      padding: 60px;
-      max-width: 1000px;
-      width: 90%;
-      box-shadow: 0 0 40px rgba(0,0,0,0.25);
-      text-align: center;
-      overflow: hidden;
-    }
-    /* Gold accent border */
-    .certificate::after {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 12px;
-      right: 12px;
-      bottom: 12px;
-      border: 3px solid #d4af37;
-      border-radius: 12px;
-      pointer-events: none;
-    }
-    /* Watermark */
-    .certificate::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 650px;
-      height: 650px;
-      background: url("assets/watermark.jpeg") no-repeat center center;
-      background-size: contain;
-      opacity: 0.06; /* lighter transparency */
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }
-    .certificate img {
-      max-width: 340px;
-      margin-bottom: 30px;
-      position: relative;
-      z-index: 1;
-    }
-    h1, h2, p, .footer {
-      position: relative;
-      z-index: 1;
-    }
-    h1 {
-      color: #2c3e50;
-      margin-bottom: 15px;
-      font-size: 2.6em;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    h2 {
-      color: #16a085;
-      margin-bottom: 25px;
-      font-size: 1.9em;
-      font-weight: bold;
-    }
-    p {
-      font-size: 1.2em;
-      line-height: 1.8;
-      color: #333;
-      margin: 15px 0;
-    }
-    .footer {
-      margin-top: 50px;
-      font-size: 1em;
-      color: #555;
-      border-top: 1px solid #ccc;
-      padding-top: 20px;
-    }
-    .honor-id {
-      margin-bottom: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-    .signature-block {
-      margin-top: 20px;
-    }
-    .signature-line {
-      margin: 0 auto 10px auto;
-      width: 250px;
-      border-top: 1px solid #333;
-    }
-    .signature-details {
-      display: flex;
-      justify-content: space-between;
-      max-width: 500px;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Workflow Mastery Award</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:"Segoe UI",sans-serif;
+  background:#eef2f7;
+  padding:20px;
+}
+
+.certificate{
+  position:relative;
+  background:#fff;
+  max-width:950px;
+  margin:auto;
+  border:3px solid #223344;
+  border-radius:18px;
+  padding:clamp(24px,5vw,60px);
+  text-align:center;
+  box-shadow:0 15px 40px rgba(0,0,0,.12);
+  overflow:hidden;
+}
+
+.certificate::after{
+  content:"";
+  position:absolute;
+  inset:14px;
+  border:1.5px solid #c9a227;
+  border-radius:12px;
+}
+
+.certificate::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("assets/watermark.jpeg")
+  no-repeat center;
+  background-size:50%;
+  opacity:.04;
+}
+
+.badge{
+  width:min(220px,60%);
+  position:relative;
+  z-index:2;
+  margin-bottom:20px;
+}
+
+.award-label{
+  font-size:.9rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#7d8a99;
+  margin-bottom:8px;
+  position:relative;
+  z-index:2;
+}
+
+h1{
+  font-size:clamp(1.8rem,4vw,3rem);
+  color:#223344;
+  margin-bottom:18px;
+  position:relative;
+  z-index:2;
+}
+
+.presented{
+  font-size:1rem;
+  color:#6d7680;
+  margin-bottom:6px;
+  position:relative;
+  z-index:2;
+}
+
+h2{
+  font-size:clamp(2rem,5vw,2.8rem);
+  color:#0d3b66;
+  margin-bottom:25px;
+  position:relative;
+  z-index:2;
+}
+
+.description{
+  max-width:720px;
+  margin:auto;
+  line-height:1.8;
+  color:#444;
+  font-size:1.05rem;
+  position:relative;
+  z-index:2;
+}
+
+.excellence{
+  margin-top:30px;
+  position:relative;
+  z-index:2;
+}
+
+.excellence h3{
+  color:#223344;
+  margin-bottom:14px;
+}
+
+.excellence ul{
+  list-style:none;
+}
+
+.excellence li{
+  margin:8px 0;
+  color:#555;
+}
+
+.footer-grid{
+  margin-top:40px;
+  padding-top:24px;
+  border-top:1px solid #ddd;
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(180px,1fr));
+  gap:20px;
+  position:relative;
+  z-index:2;
+}
+
+.label{
+  font-size:.8rem;
+  color:#777;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:5px;
+}
+
+.value{
+  color:#223344;
+  font-weight:600;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="certificate">
+
+  <img class="badge"
+  src="assets/award.png"
+  alt="Award Badge">
+
+  <div class="award-label">
+    Professional Recognition Award
+  </div>
+
+  <h1>
+    AI Workflow Mastery &
+    Prompt Innovation Award
+  </h1>
+
+  <div class="presented">
+    Presented To
+  </div>
+
+  <h2>Francis Olum</h2>
+
+  <p class="description">
+    This award recognizes outstanding achievement
+    in the design and implementation of advanced
+    AI workflows, prompt engineering strategies,
+    and automation pipelines that drive measurable
+    impact in productivity, analytics, and
+    structured optimization.
+  </p>
+
+  <div class="excellence">
+    <h3>Areas of Excellence</h3>
+
+    <ul>
+      <li>Scalable AI-assisted workflow optimization</li>
+      <li>Intelligent automation initiatives</li>
+      <li>Applied AI solution development</li>
+    </ul>
+  </div>
+
+  <div class="footer-grid">
+
+    <div>
+      <div class="label">Issued By</div>
+      <div class="value">
+        Copilot Innovation Framework
+      </div>
+    </div>
+
+    <div>
+      <div class="label">Honor ID</div>
+      <div class="value">
+        AI-WF-2026-0001
+      </div>
+    </div>
+
+    <div>
+      <div class="label">Date Issued</div>
+      <div class="value">
+        January 2026
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>      max-width: 500px;
       margin: 0 auto;
       font-size: 1em;
       color: #444;
