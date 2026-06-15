@@ -86,18 +86,20 @@ body{
 .badge{
   width:
     clamp(
-      140px,
+      180px,
       24vw,
-      220px
+      300px
     );
 
   height:auto;
-
   display:block;
 
   margin:
     0 auto
     18px;
+
+  position:relative;
+  z-index:2;
 }
 /* LABEL */
 .award-label{
