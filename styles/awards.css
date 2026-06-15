@@ -18,10 +18,13 @@ body{
 
   background:#eef2f7;
   min-height:100vh;
-  padding:16px;
+
+  padding:18px;
 }
 
-/* CERTIFICATE */
+/* ======================
+   CERTIFICATE CONTAINER
+====================== */
 .certificate{
   position:relative;
 
@@ -34,8 +37,8 @@ body{
   border-radius:22px;
 
   padding:
-    clamp(32px,4vw,64px)
-    clamp(22px,4vw,52px);
+    clamp(36px,4vw,68px)
+    clamp(24px,4vw,56px);
 
   text-align:center;
   overflow:hidden;
@@ -68,9 +71,9 @@ body{
     center center
     no-repeat;
 
-  background-size:38%;
+  background-size:34%;
 
-  opacity:.018;
+  opacity:.022;
   filter:grayscale(100%);
 
   pointer-events:none;
@@ -82,13 +85,15 @@ body{
   z-index:2;
 }
 
-/* BADGE */
+/* ======================
+   BADGE
+====================== */
 .badge{
   width:
     clamp(
-      180px,
-      24vw,
-      300px
+      170px,
+      22vw,
+      270px
     );
 
   height:auto;
@@ -96,17 +101,17 @@ body{
 
   margin:
     0 auto
-    18px;
-
-  position:relative;
-  z-index:2;
+    16px;
 }
-/* LABEL */
+
+/* ======================
+   TOP LABEL
+====================== */
 .award-label{
   text-transform:uppercase;
-  letter-spacing:2.5px;
+  letter-spacing:3px;
 
-  color:#a0a7b1;
+  color:#a2aab4;
 
   font-size:
     clamp(
@@ -118,16 +123,18 @@ body{
   margin-bottom:14px;
 }
 
-/* TITLE */
+/* ======================
+   TITLE
+====================== */
 h1{
   font-size:
     clamp(
-      1.7rem,
+      1.9rem,
       3vw,
-      3.1rem
+      3.2rem
     );
 
-  line-height:1.15;
+  line-height:1.12;
   font-weight:700;
 
   color:#243447;
@@ -136,39 +143,43 @@ h1{
 
   margin:
     0 auto
-    22px;
+    24px;
 
   text-wrap:balance;
 }
 
-/* PRESENTED TO */
+/* ======================
+   PRESENTED TO
+====================== */
 .presented{
   color:#777;
 
   font-size:
     clamp(
       .95rem,
-      1.4vw,
-      1.1rem
+      1.3vw,
+      1.08rem
     );
 
   margin-bottom:8px;
 }
 
-/* RECIPIENT NAME */
+/* ======================
+   RECIPIENT NAME
+====================== */
 h2{
   font-size:
     clamp(
-      2rem,
+      2.1rem,
       4vw,
-      3.2rem
+      3.4rem
     );
 
   font-weight:700;
 
   color:#123b66;
 
-  letter-spacing:-0.02em;
+  letter-spacing:-0.025em;
 
   margin-bottom:24px;
 
@@ -177,7 +188,9 @@ h2{
     0 2px 3px rgba(0,0,0,.06);
 }
 
-/* DESCRIPTION */
+/* ======================
+   DESCRIPTION
+====================== */
 .description{
   max-width:760px;
 
@@ -190,18 +203,20 @@ h2{
   font-size:
     clamp(
       .98rem,
-      1.4vw,
+      1.35vw,
       1.08rem
     );
 }
 
-/* DIVIDER */
+/* ======================
+   DIVIDER
+====================== */
 .divider{
   width:90px;
   height:1.5px;
 
   margin:
-    36px auto;
+    38px auto;
 
   background:
     linear-gradient(
@@ -212,7 +227,9 @@ h2{
     );
 }
 
-/* EXCELLENCE */
+/* ======================
+   EXCELLENCE
+====================== */
 .excellence h3{
   color:#223344;
 
@@ -221,7 +238,7 @@ h2{
   font-size:
     clamp(
       1.05rem,
-      1.5vw,
+      1.4vw,
       1.25rem
     );
 }
@@ -235,18 +252,22 @@ h2{
 
   color:#555;
 
+  line-height:1.7;
+
   font-size:
     clamp(
       .95rem,
-      1.2vw,
+      1.15vw,
       1.03rem
     );
 }
 
-/* FOOTER */
+/* ======================
+   FOOTER
+====================== */
 .footer-grid{
-  margin-top:40px;
-  padding-top:26px;
+  margin-top:44px;
+  padding-top:28px;
 
   border-top:
     1px solid #ddd;
@@ -256,17 +277,17 @@ h2{
   grid-template-columns:
     repeat(
       auto-fit,
-      minmax(160px,1fr)
+      minmax(180px,1fr)
     );
 
-  gap:20px;
+  gap:22px;
 }
 
 .label{
   text-transform:uppercase;
-  letter-spacing:1px;
+  letter-spacing:1.2px;
 
-  color:#8f8f8f;
+  color:#8e8e8e;
 
   font-size:.76rem;
   font-weight:600;
@@ -282,7 +303,9 @@ h2{
   line-height:1.5;
 }
 
-/* MOBILE */
+/* ======================
+   MOBILE
+====================== */
 @media(max-width:768px){
 
   body{
@@ -293,7 +316,7 @@ h2{
     border-radius:18px;
 
     padding:
-      26px
+      28px
       18px;
   }
 
@@ -301,28 +324,37 @@ h2{
     inset:10px;
   }
 
+  .certificate::before{
+    background-size:52%;
+    opacity:.018;
+  }
+
   .badge{
-    width:140px;
-    margin-bottom:16px;
+    width:145px;
+    margin-bottom:14px;
   }
 
   h1{
-    font-size:1.9rem;
-    line-height:1.18;
+    font-size:2rem;
+    line-height:1.15;
+    margin-bottom:18px;
   }
 
   h2{
-    font-size:2.4rem;
+    font-size:2.5rem;
+    margin-bottom:18px;
   }
 
   .description{
     font-size:.98rem;
-    line-height:1.72;
+    line-height:1.75;
   }
 
   .footer-grid{
     grid-template-columns:1fr;
-    gap:16px;
+
+    gap:18px;
+
     margin-top:34px;
   }
 }
