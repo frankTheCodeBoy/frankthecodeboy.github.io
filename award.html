@@ -29,12 +29,14 @@ body{
   padding:20px;
 }
 
-/* MAIN CERTIFICATE */
+/* CERTIFICATE CONTAINER */
 .certificate{
   position:relative;
-  max-width:980px;
+
+  width:min(100%,980px);
   margin:auto;
-  background:#fff;
+
+  background:#fcfcfa;
 
   border:3px solid #243447;
   border-radius:22px;
@@ -47,11 +49,11 @@ body{
   overflow:hidden;
 
   box-shadow:
-    0 12px 35px
+    0 14px 40px
     rgba(0,0,0,.12);
 }
 
-/* INNER GOLD BORDER */
+/* INNER GOLD FRAME */
 .certificate::after{
   content:"";
   position:absolute;
@@ -61,6 +63,7 @@ body{
     1.5px solid #caa641;
 
   border-radius:16px;
+
   pointer-events:none;
 }
 
@@ -71,13 +74,13 @@ body{
   inset:0;
 
   background:
-  url("assets/watermark.jpeg")
-  center center
-  no-repeat;
+    url("assets/watermark.jpeg")
+    center center
+    no-repeat;
 
   background-size:38%;
 
-  opacity:.03;
+  opacity:.018;
   filter:grayscale(100%);
 
   pointer-events:none;
@@ -89,9 +92,10 @@ body{
   height:auto;
 
   display:block;
+
   margin:
     0 auto
-    26px;
+    28px;
 
   position:relative;
   z-index:2;
@@ -102,7 +106,7 @@ body{
   text-transform:uppercase;
   letter-spacing:2px;
 
-  color:#8f99a7;
+  color:#9aa3af;
 
   font-size:.85rem;
   margin-bottom:12px;
@@ -123,12 +127,18 @@ h1{
   line-height:1.25;
   font-weight:650;
 
-  color:#223344;
+  color:#26374a;
 
-  max-width:760px;
+  text-shadow:
+    0 1px 0 #fff,
+    0 2px 2px
+    rgba(212,175,55,.08);
+
+  max-width:680px;
+
   margin:
     0 auto
-    22px;
+    24px;
 
   position:relative;
   z-index:2;
@@ -147,8 +157,6 @@ h1{
 
 /* RECIPIENT NAME */
 h2{
-  color:#0f3d68;
-
   font-size:
     clamp(
       2.2rem,
@@ -160,6 +168,23 @@ h2{
   letter-spacing:-0.02em;
 
   margin-bottom:30px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f7e08a 0%,
+      #d8b44c 30%,
+      #b8860b 55%,
+      #f2d675 80%,
+      #fff2b3 100%
+    );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+
+  text-shadow:
+    0 1px 1px
+    rgba(0,0,0,.12);
 
   position:relative;
   z-index:2;
@@ -187,13 +212,19 @@ h2{
 
 /* DIVIDER */
 .divider{
-  width:80px;
-  height:1px;
-
-  background:#d7d7d7;
+  width:90px;
+  height:1.5px;
 
   margin:
-    38px auto;
+    40px auto;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #d4af37,
+      transparent
+    );
 }
 
 /* EXCELLENCE */
@@ -220,8 +251,8 @@ h2{
 
 /* FOOTER */
 .footer-grid{
-  margin-top:48px;
-  padding-top:28px;
+  margin-top:50px;
+  padding-top:30px;
 
   border-top:
     1px solid #ddd;
@@ -244,9 +275,11 @@ h2{
   text-transform:uppercase;
   letter-spacing:1px;
 
-  color:#7c7c7c;
+  color:#b08d2f;
 
   font-size:.78rem;
+  font-weight:600;
+
   margin-bottom:8px;
 }
 
@@ -256,12 +289,16 @@ h2{
   line-height:1.5;
 }
 
-/* MOBILE IMPROVEMENTS */
+/* MOBILE */
 @media(max-width:768px){
+
+  body{
+    padding:14px;
+  }
 
   .certificate{
     border-radius:18px;
-    padding:36px 24px;
+    padding:34px 24px;
   }
 
   .badge{
@@ -275,7 +312,6 @@ h2{
   .footer-grid{
     gap:18px;
   }
-
 }
 
 </style>
@@ -328,8 +364,7 @@ h2{
 
     <ul>
       <li>
-        Scalable AI-assisted workflow
-        optimization
+        Scalable AI-assisted workflow optimization
       </li>
 
       <li>
