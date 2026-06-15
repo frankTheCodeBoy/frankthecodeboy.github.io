@@ -376,68 +376,159 @@ h2{
 @media(max-width:768px){
 
   body{
-    padding:10px;
+    padding:12px;
   }
 
   .certificate{
-    border-radius:18px;
+    width:100%;
+
+    border-radius:22px;
+    border-width:2.5px;
 
     padding:
-      26px
-      18px;
+      24px
+      20px
+      28px;
+
+    box-shadow:
+      0 8px 24px
+      rgba(0,0,0,.10);
   }
 
   .certificate::after{
     inset:10px;
+    border-radius:18px;
   }
 
   .certificate::before{
-    background-size:52%;
-    opacity:.015;
+    background-size:58%;
+    opacity:.014;
   }
 
   .badge{
-    width:150px;
+    width:135px;
+    margin-bottom:14px;
+  }
+
+  .award-label{
+    font-size:.72rem;
+    letter-spacing:4px;
     margin-bottom:16px;
+    line-height:1.5;
   }
 
   h1{
-    font-size:2rem;
+    font-size:
+      clamp(
+        2rem,
+        8vw,
+        2.8rem
+      );
 
-    line-height:1.15;
+    line-height:1.12;
 
-    margin-bottom:16px;
+    max-width:100%;
+
+    margin:
+      0 auto
+      20px;
+  }
+
+  .presented{
+    font-size:1rem;
+    margin-bottom:8px;
   }
 
   h2{
-    font-size:2.45rem;
-    margin-bottom:10px;
+    font-size:
+      clamp(
+        2.3rem,
+        9vw,
+        3rem
+      );
+
+    line-height:1.05;
+
+    margin-bottom:14px;
   }
 
   .recognition-pill{
-    font-size:.84rem;
+    display:block;
+
+    width:100%;
+
+    max-width:560px;
+
+    margin:
+      0 auto
+      24px;
 
     padding:
-      8px 14px;
+      14px
+      18px;
 
-    margin-bottom:20px;
+    font-size:1rem;
+    line-height:1.35;
+
+    border-radius:999px;
   }
 
   .description{
-    font-size:.98rem;
-    line-height:1.72;
+    font-size:1.05rem;
+
+    line-height:1.9;
+
+    max-width:100%;
+
+    padding:
+      0
+      6px;
+  }
+
+  .divider{
+    width:110px;
+
+    margin:
+      34px auto;
+  }
+
+  .excellence h3{
+    font-size:2rem;
+    margin-bottom:22px;
+  }
+
+  .excellence li{
+    font-size:1.12rem;
+    line-height:1.8;
+
+    margin:14px 0;
   }
 
   .footer-grid{
     grid-template-columns:1fr;
 
-    gap:18px;
+    gap:24px;
 
-    margin-top:30px;
+    margin-top:36px;
+    padding-top:28px;
+  }
+
+  .label{
+    font-size:.82rem;
+    letter-spacing:2px;
+  }
+
+  .value{
+    font-size:1.05rem;
+    line-height:1.5;
   }
 
   .verification{
-    font-size:.8rem;
-    margin-top:20px;
+    margin-top:26px;
+
+    font-size:.95rem;
+    line-height:1.7;
+
+    word-break:break-word;
   }
-}
+    }
