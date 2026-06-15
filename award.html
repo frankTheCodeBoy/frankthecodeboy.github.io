@@ -14,23 +14,46 @@
       justify-content: center;
     }
     .certificate {
+      position: relative;
       background: #fff;
-      border: 6px solid #2c3e50;
+      border: 8px solid #2c3e50;
       border-radius: 16px;
-      padding: 50px;
+      padding: 60px;
       max-width: 1000px;
       width: 90%;
-      box-shadow: 0 0 40px rgba(0,0,0,0.2);
+      box-shadow: 0 0 40px rgba(0,0,0,0.25);
       text-align: center;
+      overflow: hidden;
+    }
+    /* Watermark */
+    .certificate::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      background: url("assets/watermark.png") no-repeat center center;
+      background-size: contain;
+      opacity: 0.08; /* faint transparency */
+      transform: translate(-50%, -50%);
+      pointer-events: none;
     }
     .certificate img {
-      max-width: 320px;
-      margin-bottom: 25px;
+      max-width: 340px;
+      margin-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    h1, h2, p, .footer, .signature {
+      position: relative;
+      z-index: 1;
     }
     h1 {
       color: #2c3e50;
       margin-bottom: 15px;
-      font-size: 2.4em;
+      font-size: 2.6em;
+      letter-spacing: 1px;
     }
     h2 {
       color: #16a085;
@@ -44,23 +67,30 @@
       margin: 15px 0;
     }
     .footer {
-      margin-top: 35px;
+      margin-top: 40px;
       font-size: 1em;
       color: #555;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
     }
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
+    .signature {
+      margin-top: 40px;
       font-size: 1.1em;
-      background: #16a085;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background 0.3s ease;
+      color: #444;
+      font-style: italic;
     }
-    .download-btn:hover {
-      background: #13856e;
+    .signature-line {
+      margin: 10px auto;
+      width: 250px;
+      border-top: 1px solid #333;
+    }
+    .signature-details {
+      display: flex;
+      justify-content: space-between;
+      max-width: 500px;
+      margin: 0 auto;
+      font-size: 1em;
+      color: #444;
     }
   </style>
 </head>
@@ -86,7 +116,13 @@
     <div class="footer">
       Honor ID: AI-WF-2026-0001
     </div>
-    <a href="assets/award.png" download class="download-btn">⬇ Download Badge</a>
+    <div class="signature">
+      <div class="signature-line"></div>
+      <div class="signature-details">
+        <span>Authorized by Copilot Innovation Framework</span>
+        <span>Dated: January 2026</span>
+      </div>
+    </div>
   </div>
 </body>
 </html>
