@@ -76,20 +76,20 @@ body{
 
   background:
     url("../assets/watermark.png")
-    center 42%
-    / 72% no-repeat,
+    center center
+    no-repeat;
 
-    url("../assets/watermark.png")
-    center 78%
-    / 55% no-repeat;
+  /* visible but premium */
+  background-size:82%;
 
-  opacity:.07;
+  /* this is the key fix */
+  opacity:.14;
 
+  /* subtle premium tone */
   filter:
-    grayscale(100%)
-    blur(.15px);
-
-  mix-blend-mode:multiply;
+    saturate(.78)
+    contrast(1.04)
+    brightness(.95);
 
   pointer-events:none;
 }
@@ -106,7 +106,7 @@ body{
 .badge{
   width:
     clamp(
-      120px,
+      125px,
       16vw,
       200px
     );
@@ -118,8 +118,6 @@ body{
   margin:
     0 auto
     20px;
-
-  mix-blend-mode:multiply;
 
   filter:
     drop-shadow(
@@ -143,7 +141,7 @@ body{
 
   letter-spacing:4px;
 
-  color:#a2aab4;
+  color:#9da5ae;
 
   font-size:
     clamp(
@@ -164,10 +162,10 @@ h1{
     clamp(
       1.9rem,
       3vw,
-      3.15rem
+      3.1rem
     );
 
-  line-height:1.05;
+  line-height:1.08;
   font-weight:700;
 
   color:#243447;
@@ -234,12 +232,12 @@ h2{
 
   border:
     1px solid
-    rgba(202,166,65,.28);
+    rgba(202,166,65,.24);
 
   border-radius:999px;
 
   background:
-    rgba(212,175,55,.08);
+    rgba(212,175,55,.07);
 
   color:#78643d;
 
@@ -411,14 +409,10 @@ h2{
     border-radius:18px;
   }
 
-  /* MOBILE WATERMARK */
+  /* watermark tuned for phones */
   .certificate::before{
-    background:
-      url("../assets/watermark.png")
-      center 44%
-      / 105% no-repeat;
-
-    opacity:.06;
+    background-size:108%;
+    opacity:.12;
   }
 
   .badge{
@@ -512,4 +506,4 @@ h2{
 
     word-break:break-word;
   }
-}
+    }
