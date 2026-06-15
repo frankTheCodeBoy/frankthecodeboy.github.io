@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+/>
 
-<title>AI Workflow Mastery Award</title>
+<title>
+AI Workflow Mastery & Prompt Innovation Award
+</title>
 
 <style>
 
@@ -16,117 +20,192 @@ content="width=device-width, initial-scale=1.0">
 }
 
 body{
-  font-family:"Segoe UI",Arial,sans-serif;
+  font-family:
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
   background:#eef2f7;
-  padding:18px;
+  padding:20px;
 }
 
+/* MAIN CERTIFICATE */
 .certificate{
   position:relative;
-  max-width:950px;
+  max-width:980px;
   margin:auto;
   background:#fff;
+
   border:3px solid #243447;
-  border-radius:18px;
-  padding:clamp(28px,5vw,60px);
+  border-radius:22px;
+
+  padding:
+    clamp(42px,6vw,80px)
+    clamp(28px,5vw,60px);
+
   text-align:center;
   overflow:hidden;
-  box-shadow:0 10px 35px rgba(0,0,0,.12);
+
+  box-shadow:
+    0 12px 35px
+    rgba(0,0,0,.12);
 }
 
-/* inner gold frame */
+/* INNER GOLD BORDER */
 .certificate::after{
   content:"";
   position:absolute;
-  inset:12px;
-  border:1.5px solid #caa641;
-  border-radius:12px;
+  inset:14px;
+
+  border:
+    1.5px solid #caa641;
+
+  border-radius:16px;
   pointer-events:none;
 }
 
-/* watermark */
+/* WATERMARK */
 .certificate::before{
   content:"";
   position:absolute;
   inset:0;
+
   background:
   url("assets/watermark.jpeg")
-  center center no-repeat;
-  background-size:45%;
-  opacity:.045;
+  center center
+  no-repeat;
+
+  background-size:38%;
+
+  opacity:.03;
+  filter:grayscale(100%);
+
   pointer-events:none;
 }
 
-/* badge */
+/* BADGE */
 .badge{
-  width:min(200px,55vw);
+  width:min(240px,58vw);
   height:auto;
+
   display:block;
-  margin:0 auto 22px;
+  margin:
+    0 auto
+    26px;
+
   position:relative;
   z-index:2;
 }
 
-/* top label */
+/* TOP LABEL */
 .award-label{
   text-transform:uppercase;
   letter-spacing:2px;
-  color:#8b96a5;
+
+  color:#8f99a7;
+
   font-size:.85rem;
-  margin-bottom:10px;
+  margin-bottom:12px;
+
   position:relative;
   z-index:2;
 }
 
-/* title */
+/* TITLE */
 h1{
-  font-size:clamp(2rem,4vw,3.1rem);
-  line-height:1.2;
+  font-size:
+    clamp(
+      1.7rem,
+      3.5vw,
+      2.7rem
+    );
+
+  line-height:1.25;
+  font-weight:650;
+
   color:#223344;
-  margin-bottom:20px;
+
+  max-width:760px;
+  margin:
+    0 auto
+    22px;
+
   position:relative;
   z-index:2;
 }
 
-/* presented to */
+/* PRESENTED TO */
 .presented{
   color:#777;
   font-size:1rem;
-  margin-bottom:8px;
+
+  margin-bottom:10px;
+
   position:relative;
   z-index:2;
 }
 
-/* recipient name */
+/* RECIPIENT NAME */
 h2{
   color:#0f3d68;
-  font-size:clamp(2rem,5vw,3rem);
-  margin-bottom:26px;
+
+  font-size:
+    clamp(
+      2.2rem,
+      5vw,
+      3.2rem
+    );
+
+  font-weight:700;
+  letter-spacing:-0.02em;
+
+  margin-bottom:30px;
+
   position:relative;
   z-index:2;
 }
 
-/* description */
+/* DESCRIPTION */
 .description{
-  max-width:700px;
+  max-width:760px;
+
   margin:auto;
-  line-height:1.8;
+
+  line-height:1.9;
   color:#444;
-  font-size:1.05rem;
+
+  font-size:
+    clamp(
+      1rem,
+      2vw,
+      1.08rem
+    );
+
   position:relative;
   z-index:2;
 }
 
-/* excellence section */
+/* DIVIDER */
+.divider{
+  width:80px;
+  height:1px;
+
+  background:#d7d7d7;
+
+  margin:
+    38px auto;
+}
+
+/* EXCELLENCE */
 .excellence{
-  margin-top:34px;
   position:relative;
   z-index:2;
 }
 
 .excellence h3{
-  margin-bottom:14px;
   color:#223344;
+  margin-bottom:18px;
+  font-size:1.2rem;
 }
 
 .excellence ul{
@@ -134,19 +213,29 @@ h2{
 }
 
 .excellence li{
-  margin:8px 0;
+  margin:10px 0;
   color:#555;
+  font-size:1.02rem;
 }
 
-/* footer */
+/* FOOTER */
 .footer-grid{
-  margin-top:42px;
-  border-top:1px solid #ddd;
-  padding-top:26px;
+  margin-top:48px;
+  padding-top:28px;
+
+  border-top:
+    1px solid #ddd;
+
   display:grid;
+
   grid-template-columns:
-  repeat(auto-fit,minmax(180px,1fr));
-  gap:20px;
+    repeat(
+      auto-fit,
+      minmax(180px,1fr)
+    );
+
+  gap:24px;
+
   position:relative;
   z-index:2;
 }
@@ -154,14 +243,39 @@ h2{
 .label{
   text-transform:uppercase;
   letter-spacing:1px;
-  color:#7a7a7a;
+
+  color:#7c7c7c;
+
   font-size:.78rem;
-  margin-bottom:6px;
+  margin-bottom:8px;
 }
 
 .value{
   color:#223344;
   font-weight:600;
+  line-height:1.5;
+}
+
+/* MOBILE IMPROVEMENTS */
+@media(max-width:768px){
+
+  .certificate{
+    border-radius:18px;
+    padding:36px 24px;
+  }
+
+  .badge{
+    width:min(190px,60vw);
+  }
+
+  .description{
+    line-height:1.8;
+  }
+
+  .footer-grid{
+    gap:18px;
+  }
+
 }
 
 </style>
@@ -190,25 +304,43 @@ h2{
     Presented To
   </div>
 
-  <h2>Francis Olum</h2>
+  <h2>
+    Francis Olum
+  </h2>
 
   <p class="description">
-    This award recognizes outstanding achievement
-    in the design and implementation of advanced
-    AI workflows, prompt engineering strategies,
-    and automation pipelines that drive measurable
+    This award recognizes outstanding
+    achievement in the design and
+    implementation of advanced AI workflows,
+    prompt engineering strategies, and
+    automation pipelines that drive measurable
     impact in productivity, analytics, and
     structured optimization.
   </p>
 
+  <div class="divider"></div>
+
   <div class="excellence">
-    <h3>Areas of Excellence</h3>
+
+    <h3>
+      Areas of Excellence
+    </h3>
 
     <ul>
-      <li>Scalable AI-assisted workflow optimization</li>
-      <li>Intelligent automation initiatives</li>
-      <li>Applied AI solution development</li>
+      <li>
+        Scalable AI-assisted workflow
+        optimization
+      </li>
+
+      <li>
+        Intelligent automation initiatives
+      </li>
+
+      <li>
+        Applied AI solution development
+      </li>
     </ul>
+
   </div>
 
   <div class="footer-grid">
