@@ -64,10 +64,11 @@ body{
   border-radius:16px;
 
   pointer-events:none;
+  z-index:1;
 }
 
 /* ======================
-   WATERMARK (FINAL)
+   WATERMARK (FINAL FINAL)
 ====================== */
 .certificate::before{
   content:"";
@@ -79,19 +80,19 @@ body{
     center center
     no-repeat;
 
-  /* visible but premium */
-  background-size:82%;
+  /* make it visible */
+  background-size:78%;
 
-  /* this is the key fix */
-  opacity:.14;
+  /* THIS is the important fix */
+  opacity:.12;
 
-  /* subtle premium tone */
+  /* subtle premium tint */
   filter:
-    saturate(.78)
-    contrast(1.04)
-    brightness(.95);
+    sepia(.35)
+    saturate(.9);
 
   pointer-events:none;
+  z-index:0;
 }
 
 /* CONTENT ABOVE WATERMARK */
@@ -106,7 +107,7 @@ body{
 .badge{
   width:
     clamp(
-      125px,
+      120px,
       16vw,
       200px
     );
@@ -138,10 +139,9 @@ body{
 ====================== */
 .award-label{
   text-transform:uppercase;
-
   letter-spacing:4px;
 
-  color:#9da5ae;
+  color:#9ca4af;
 
   font-size:
     clamp(
@@ -162,7 +162,7 @@ h1{
     clamp(
       1.9rem,
       3vw,
-      3.1rem
+      3.15rem
     );
 
   line-height:1.08;
@@ -170,7 +170,7 @@ h1{
 
   color:#243447;
 
-  max-width:680px;
+  max-width:700px;
 
   margin:
     0 auto
@@ -215,8 +215,8 @@ h2{
   margin-bottom:14px;
 
   text-shadow:
-    0 1px 0 rgba(255,255,255,.35),
-    0 2px 3px rgba(0,0,0,.06);
+    0 2px 3px
+    rgba(0,0,0,.06);
 }
 
 /* ======================
@@ -232,12 +232,12 @@ h2{
 
   border:
     1px solid
-    rgba(202,166,65,.24);
+    rgba(202,166,65,.28);
 
   border-radius:999px;
 
   background:
-    rgba(212,175,55,.07);
+    rgba(212,175,55,.08);
 
   color:#78643d;
 
@@ -409,10 +409,10 @@ h2{
     border-radius:18px;
   }
 
-  /* watermark tuned for phones */
+  /* make watermark visible on phones */
   .certificate::before{
-    background-size:108%;
-    opacity:.12;
+    background-size:96%;
+    opacity:.10;
   }
 
   .badge{
@@ -440,7 +440,6 @@ h2{
 
   .presented{
     font-size:1rem;
-    margin-bottom:8px;
   }
 
   h2{
@@ -459,8 +458,7 @@ h2{
     width:min(90%,400px);
 
     padding:
-      12px
-      18px;
+      12px 18px;
 
     font-size:.96rem;
 
@@ -506,4 +504,4 @@ h2{
 
     word-break:break-word;
   }
-    }
+}
