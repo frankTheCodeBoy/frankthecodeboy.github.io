@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
 <title>AI Workflow Mastery Award</title>
 
 <style>
+
 *{
   margin:0;
   padding:0;
@@ -13,85 +16,99 @@
 }
 
 body{
-  font-family:"Segoe UI",sans-serif;
+  font-family:"Segoe UI",Arial,sans-serif;
   background:#eef2f7;
-  padding:20px;
+  padding:18px;
 }
 
 .certificate{
   position:relative;
-  background:#fff;
   max-width:950px;
   margin:auto;
-  border:3px solid #223344;
+  background:#fff;
+  border:3px solid #243447;
   border-radius:18px;
-  padding:clamp(24px,5vw,60px);
+  padding:clamp(28px,5vw,60px);
   text-align:center;
-  box-shadow:0 15px 40px rgba(0,0,0,.12);
   overflow:hidden;
+  box-shadow:0 10px 35px rgba(0,0,0,.12);
 }
 
+/* inner gold frame */
 .certificate::after{
   content:"";
   position:absolute;
-  inset:14px;
-  border:1.5px solid #c9a227;
+  inset:12px;
+  border:1.5px solid #caa641;
   border-radius:12px;
+  pointer-events:none;
 }
 
+/* watermark */
 .certificate::before{
   content:"";
   position:absolute;
   inset:0;
-  background:url("assets/watermark.jpeg")
-  no-repeat center;
-  background-size:50%;
-  opacity:.04;
+  background:
+  url("assets/watermark.jpeg")
+  center center no-repeat;
+  background-size:45%;
+  opacity:.045;
+  pointer-events:none;
 }
 
+/* badge */
 .badge{
-  width:min(220px,60%);
+  width:min(200px,55vw);
+  height:auto;
+  display:block;
+  margin:0 auto 22px;
   position:relative;
   z-index:2;
-  margin-bottom:20px;
 }
 
+/* top label */
 .award-label{
-  font-size:.9rem;
-  letter-spacing:2px;
   text-transform:uppercase;
-  color:#7d8a99;
+  letter-spacing:2px;
+  color:#8b96a5;
+  font-size:.85rem;
+  margin-bottom:10px;
+  position:relative;
+  z-index:2;
+}
+
+/* title */
+h1{
+  font-size:clamp(2rem,4vw,3.1rem);
+  line-height:1.2;
+  color:#223344;
+  margin-bottom:20px;
+  position:relative;
+  z-index:2;
+}
+
+/* presented to */
+.presented{
+  color:#777;
+  font-size:1rem;
   margin-bottom:8px;
   position:relative;
   z-index:2;
 }
 
-h1{
-  font-size:clamp(1.8rem,4vw,3rem);
-  color:#223344;
-  margin-bottom:18px;
-  position:relative;
-  z-index:2;
-}
-
-.presented{
-  font-size:1rem;
-  color:#6d7680;
-  margin-bottom:6px;
-  position:relative;
-  z-index:2;
-}
-
+/* recipient name */
 h2{
-  font-size:clamp(2rem,5vw,2.8rem);
-  color:#0d3b66;
-  margin-bottom:25px;
+  color:#0f3d68;
+  font-size:clamp(2rem,5vw,3rem);
+  margin-bottom:26px;
   position:relative;
   z-index:2;
 }
 
+/* description */
 .description{
-  max-width:720px;
+  max-width:700px;
   margin:auto;
   line-height:1.8;
   color:#444;
@@ -100,15 +117,16 @@ h2{
   z-index:2;
 }
 
+/* excellence section */
 .excellence{
-  margin-top:30px;
+  margin-top:34px;
   position:relative;
   z-index:2;
 }
 
 .excellence h3{
-  color:#223344;
   margin-bottom:14px;
+  color:#223344;
 }
 
 .excellence ul{
@@ -120,10 +138,11 @@ h2{
   color:#555;
 }
 
+/* footer */
 .footer-grid{
-  margin-top:40px;
-  padding-top:24px;
+  margin-top:42px;
   border-top:1px solid #ddd;
+  padding-top:26px;
   display:grid;
   grid-template-columns:
   repeat(auto-fit,minmax(180px,1fr));
@@ -133,11 +152,11 @@ h2{
 }
 
 .label{
-  font-size:.8rem;
-  color:#777;
   text-transform:uppercase;
   letter-spacing:1px;
-  margin-bottom:5px;
+  color:#7a7a7a;
+  font-size:.78rem;
+  margin-bottom:6px;
 }
 
 .value{
@@ -152,9 +171,11 @@ h2{
 
 <div class="certificate">
 
-  <img class="badge"
-  src="assets/award.png"
-  alt="Award Badge">
+  <img
+    src="assets/award.png"
+    alt="Award Badge"
+    class="badge"
+  >
 
   <div class="award-label">
     Professional Recognition Award
@@ -193,21 +214,30 @@ h2{
   <div class="footer-grid">
 
     <div>
-      <div class="label">Issued By</div>
+      <div class="label">
+        Issued By
+      </div>
+
       <div class="value">
         Copilot Innovation Framework
       </div>
     </div>
 
     <div>
-      <div class="label">Honor ID</div>
+      <div class="label">
+        Honor ID
+      </div>
+
       <div class="value">
         AI-WF-2026-0001
       </div>
     </div>
 
     <div>
-      <div class="label">Date Issued</div>
+      <div class="label">
+        Date Issued
+      </div>
+
       <div class="value">
         January 2026
       </div>
@@ -217,66 +247,5 @@ h2{
 
 </div>
 
-</body>
-</html>      max-width: 500px;
-      margin: 0 auto;
-      font-size: 1em;
-      color: #444;
-      font-style: italic;
-    }
-  </style>
-</head>
-<body>
-  <div class="certificate">
-    <img src="assets/award.png" alt="AI Workflow Mastery Badge">
-    <h1>🏆 AI Workflow Mastery & Prompt Innovation Award</h1>
-    <h2>Presented to Francis Olum</h2>
-    <p>
-      This award recognizes outstanding achievement in the design and implementation of advanced AI workflows, 
-      prompt engineering strategies, and automation pipelines. It highlights contributions that have driven 
-      measurable impact in analytics, productivity, and structured data optimization.
-    </p>
-    <p>
-      <strong>Areas of Excellence:</strong><br>
-      • Scalable AI-assisted workflow optimization<br>
-      • Intelligent automation initiatives<br>
-      • Applied AI solution development
-    </p>
-    <p>
-      Issued by the <em>Copilot Innovation Framework</em>, January 2026.
-    </p>
-    <div class="footer">
-      <div class="honor-id">Honor ID: AI-WF-2026-0001</div>
-      <div class="signature-block">
-        <div class="signature-line"></div>
-        <div class="signature-details">
-          <span>Authorized by Copilot Innovation Framework</span>
-          <span>Dated: January 2026</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-</html>    </p>
-    <p>
-      <strong>Areas of Excellence:</strong><br>
-      • Scalable AI-assisted workflow optimization<br>
-      • Intelligent automation initiatives<br>
-      • Applied AI solution development
-    </p>
-    <p>
-      Issued by the <em>Copilot Innovation Framework</em>, January 2026.
-    </p>
-    <div class="footer">
-      Honor ID: AI-WF-2026-0001
-    </div>
-    <div class="signature">
-      <div class="signature-line"></div>
-      <div class="signature-details">
-        <span>Authorized by Copilot Innovation Framework</span>
-        <span>Dated: January 2026</span>
-      </div>
-    </div>
-  </div>
 </body>
 </html>
