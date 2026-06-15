@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Workflow Mastery & Prompt Innovation Award</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f4f6f9;
+      text-align: center;
+      padding: 40px;
+    }
+    .certificate {
+      background: #fff;
+      border: 4px solid #2c3e50;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 0 25px rgba(0,0,0,0.15);
+    }
+    .certificate img {
+      max-width: 280px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+    h2 {
+      color: #16a085;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #333;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 0.95em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="certificate">
+    <img src="assets/award.png" alt="AI Workflow Mastery Badge">
+    <h1>🏆 AI Workflow Mastery & Prompt Innovation Award</h1>
+    <h2>Presented to Francis Olum</h2>
+    <p>
+      This award recognizes outstanding achievement in the design and implementation of advanced AI workflows, 
+      prompt engineering strategies, and automation pipelines. It highlights contributions that have driven 
+      measurable impact in analytics, productivity, and structured data optimization.
+    </p>
+    <p>
+      <strong>Areas of Excellence:</strong><br>
+      • Scalable AI-assisted workflow optimization<br>
+      • Intelligent automation initiatives<br>
+      • Applied AI solution development
+    </p>
+    <p>
+      Issued by the <em>Copilot Innovation Framework</em>, January 2026.
+    </p>
+    <div class="footer">
+      Honor ID: AI-WF-2026-0001
+    </div>
+  </div>
+</body>
+</html>
