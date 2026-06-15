@@ -17,8 +17,8 @@ body{
     sans-serif;
 
   background:#eef2f7;
-  min-height:100vh;
 
+  min-height:100vh;
   padding:18px;
 }
 
@@ -31,14 +31,19 @@ body{
   width:min(100%,980px);
   margin:auto;
 
-  background:#fdfcf8;
+  background:
+    linear-gradient(
+      180deg,
+      #fffefb 0%,
+      #fdfcf8 100%
+    );
 
   border:3px solid #243447;
   border-radius:22px;
 
   padding:
-    clamp(36px,4vw,68px)
-    clamp(24px,4vw,56px);
+    clamp(38px,4vw,72px)
+    clamp(26px,4vw,58px);
 
   text-align:center;
   overflow:hidden;
@@ -48,7 +53,9 @@ body{
     rgba(0,0,0,.12);
 }
 
-/* INNER GOLD FRAME */
+/* ======================
+   INNER GOLD FRAME
+====================== */
 .certificate::after{
   content:"";
   position:absolute;
@@ -60,7 +67,9 @@ body{
   pointer-events:none;
 }
 
-/* WATERMARK */
+/* ======================
+   WATERMARK
+====================== */
 .certificate::before{
   content:"";
   position:absolute;
@@ -73,7 +82,8 @@ body{
 
   background-size:34%;
 
-  opacity:.022;
+  opacity:.018;
+
   filter:grayscale(100%);
 
   pointer-events:none;
@@ -91,17 +101,31 @@ body{
 .badge{
   width:
     clamp(
-      170px,
+      185px,
       22vw,
-      270px
+      285px
     );
 
   height:auto;
+
   display:block;
 
   margin:
     0 auto
-    16px;
+    24px;
+
+  filter:
+    drop-shadow(
+      0 10px 18px
+      rgba(0,0,0,.08)
+    );
+
+  transition:
+    transform .25s ease;
+}
+
+.badge:hover{
+  transform:scale(1.02);
 }
 
 /* ======================
@@ -109,6 +133,7 @@ body{
 ====================== */
 .award-label{
   text-transform:uppercase;
+
   letter-spacing:3px;
 
   color:#a2aab4;
@@ -131,10 +156,10 @@ h1{
     clamp(
       1.9rem,
       3vw,
-      3.2rem
+      3.15rem
     );
 
-  line-height:1.12;
+  line-height:1.14;
   font-weight:700;
 
   color:#243447;
@@ -143,7 +168,7 @@ h1{
 
   margin:
     0 auto
-    24px;
+    22px;
 
   text-wrap:balance;
 }
@@ -181,11 +206,37 @@ h2{
 
   letter-spacing:-0.025em;
 
-  margin-bottom:24px;
+  margin-bottom:14px;
 
   text-shadow:
     0 1px 0 rgba(255,255,255,.35),
     0 2px 3px rgba(0,0,0,.06);
+}
+
+/* ======================
+   RECOGNITION PILL
+====================== */
+.recognition-pill{
+  display:inline-block;
+
+  padding:
+    10px 18px;
+
+  border:
+    1px solid
+    rgba(202,166,65,.22);
+
+  border-radius:999px;
+
+  background:
+    rgba(212,175,55,.06);
+
+  color:#78643d;
+
+  font-size:.92rem;
+  font-weight:500;
+
+  margin-bottom:26px;
 }
 
 /* ======================
@@ -252,7 +303,7 @@ h2{
 
   color:#555;
 
-  line-height:1.7;
+  line-height:1.75;
 
   font-size:
     clamp(
@@ -285,6 +336,7 @@ h2{
 
 .label{
   text-transform:uppercase;
+
   letter-spacing:1.2px;
 
   color:#8e8e8e;
@@ -301,6 +353,21 @@ h2{
   font-weight:600;
 
   line-height:1.5;
+}
+
+/* ======================
+   VERIFICATION
+====================== */
+.verification{
+  margin-top:26px;
+
+  font-size:.84rem;
+
+  color:#7d7d7d;
+
+  letter-spacing:.4px;
+
+  line-height:1.6;
 }
 
 /* ======================
@@ -326,23 +393,36 @@ h2{
 
   .certificate::before{
     background-size:52%;
-    opacity:.018;
+    opacity:.015;
   }
 
   .badge{
-    width:145px;
-    margin-bottom:14px;
+    width:155px;
+
+    margin-bottom:18px;
   }
 
   h1{
     font-size:2rem;
+
     line-height:1.15;
+
     margin-bottom:18px;
   }
 
   h2{
-    font-size:2.5rem;
-    margin-bottom:18px;
+    font-size:2.45rem;
+
+    margin-bottom:12px;
+  }
+
+  .recognition-pill{
+    font-size:.84rem;
+
+    padding:
+      8px 14px;
+
+    margin-bottom:22px;
   }
 
   .description{
@@ -356,5 +436,10 @@ h2{
     gap:18px;
 
     margin-top:34px;
+  }
+
+  .verification{
+    font-size:.8rem;
+    margin-top:22px;
   }
 }
