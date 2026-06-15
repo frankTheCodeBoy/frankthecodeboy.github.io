@@ -25,17 +25,29 @@
       text-align: center;
       overflow: hidden;
     }
+    /* Gold accent border */
+    .certificate::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border: 3px solid #d4af37;
+      border-radius: 12px;
+      pointer-events: none;
+    }
     /* Watermark */
     .certificate::before {
       content: "";
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 600px;
-      height: 600px;
+      width: 650px;
+      height: 650px;
       background: url("assets/watermark.jpeg") no-repeat center center;
       background-size: contain;
-      opacity: 0.08; /* faint transparency */
+      opacity: 0.06; /* lighter transparency */
       transform: translate(-50%, -50%);
       pointer-events: none;
     }
@@ -45,7 +57,7 @@
       position: relative;
       z-index: 1;
     }
-    h1, h2, p, .footer, .signature {
+    h1, h2, p, .footer {
       position: relative;
       z-index: 1;
     }
@@ -54,11 +66,13 @@
       margin-bottom: 15px;
       font-size: 2.6em;
       letter-spacing: 1px;
+      text-transform: uppercase;
     }
     h2 {
       color: #16a085;
       margin-bottom: 25px;
-      font-size: 1.8em;
+      font-size: 1.9em;
+      font-weight: bold;
     }
     p {
       font-size: 1.2em;
@@ -67,20 +81,22 @@
       margin: 15px 0;
     }
     .footer {
-      margin-top: 40px;
+      margin-top: 50px;
       font-size: 1em;
       color: #555;
       border-top: 1px solid #ccc;
-      padding-top: 10px;
+      padding-top: 20px;
     }
-    .signature {
-      margin-top: 40px;
-      font-size: 1.1em;
-      color: #444;
-      font-style: italic;
+    .honor-id {
+      margin-bottom: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .signature-block {
+      margin-top: 20px;
     }
     .signature-line {
-      margin: 10px auto;
+      margin: 0 auto 10px auto;
       width: 250px;
       border-top: 1px solid #333;
     }
@@ -91,6 +107,7 @@
       margin: 0 auto;
       font-size: 1em;
       color: #444;
+      font-style: italic;
     }
   </style>
 </head>
@@ -104,6 +121,28 @@
       prompt engineering strategies, and automation pipelines. It highlights contributions that have driven 
       measurable impact in analytics, productivity, and structured data optimization.
     </p>
+    <p>
+      <strong>Areas of Excellence:</strong><br>
+      • Scalable AI-assisted workflow optimization<br>
+      • Intelligent automation initiatives<br>
+      • Applied AI solution development
+    </p>
+    <p>
+      Issued by the <em>Copilot Innovation Framework</em>, January 2026.
+    </p>
+    <div class="footer">
+      <div class="honor-id">Honor ID: AI-WF-2026-0001</div>
+      <div class="signature-block">
+        <div class="signature-line"></div>
+        <div class="signature-details">
+          <span>Authorized by Copilot Innovation Framework</span>
+          <span>Dated: January 2026</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>    </p>
     <p>
       <strong>Areas of Excellence:</strong><br>
       • Scalable AI-assisted workflow optimization<br>
