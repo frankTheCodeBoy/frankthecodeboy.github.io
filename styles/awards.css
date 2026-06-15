@@ -86,9 +86,9 @@ body{
 .badge{
   width:
     clamp(
-      125px,
-      22vw,
-      210px
+      140px,
+      24vw,
+      220px
     );
 
   height:auto;
@@ -99,7 +99,6 @@ body{
     0 auto
     18px;
 }
-
 /* LABEL */
 .award-label{
   text-transform:uppercase;
