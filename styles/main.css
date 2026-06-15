@@ -1,0 +1,310 @@
+/* ==========================
+   Global Reset
+========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #08111f;
+  color: #f4f1ea;
+  font-family: Inter, sans-serif;
+  line-height: 1.7;
+}
+
+/* ==========================
+   Navigation
+========================== */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 8%;
+  background: rgba(8, 17, 31, 0.92);
+  backdrop-filter: blur(16px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.brand {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  display: flex;
+  gap: 28px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #c9d4e3;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #d6b36a;
+}
+
+/* ==========================
+   Hero
+========================== */
+
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 80px 8%;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(214,179,106,0.10),
+      transparent 35%
+    ),
+    #08111f;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.eyebrow {
+  color: #d6b36a;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.05;
+  margin-bottom: 28px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  color: #b8c3d1;
+  max-width: 680px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 40px;
+}
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn-primary,
+.btn-secondary {
+  padding: 15px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #d6b36a;
+  color: #08111f;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+}
+
+.btn-secondary:hover {
+  border-color: #d6b36a;
+}
+
+/* ==========================
+   Sections
+========================== */
+
+.dual-section,
+.domains,
+.network,
+.recognition {
+  padding: 110px 8%;
+}
+
+.dual-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.card,
+.domain-card,
+.recognition-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 28px;
+  padding: 42px;
+}
+
+.card-label {
+  color: #d6b36a;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.card h2,
+.section-header h2 {
+  font-size: 2.4rem;
+  margin: 14px 0 20px;
+}
+
+.card p,
+.network p,
+.recognition p {
+  color: #b8c3d1;
+}
+
+/* ==========================
+   Domain Grid
+========================== */
+
+.domain-grid {
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.domain-card {
+  text-align: center;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.domain-card:hover {
+  border-color: #d6b36a;
+  transform: translateY(-4px);
+}
+
+/* ==========================
+   Network
+========================== */
+
+.locations {
+  margin-top: 42px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.locations div {
+  padding: 14px 24px;
+  border-radius: 999px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ==========================
+   Recognition
+========================== */
+
+.recognition-card {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ==========================
+   Footer
+========================== */
+
+footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+
+  padding: 50px 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-links a {
+  color: #b8c3d1;
+  text-decoration: none;
+}
+
+.footer-note {
+  color: #8a94a4;
+}
+
+/* ==========================
+   Mobile
+========================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 2.9rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .dual-section {
+    grid-template-columns: 1fr;
+  }
+
+  .domain-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
