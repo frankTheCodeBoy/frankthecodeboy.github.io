@@ -17,7 +17,6 @@ body{
     sans-serif;
 
   background:#eef2f7;
-
   min-height:100vh;
   padding:18px;
 }
@@ -68,26 +67,29 @@ body{
 }
 
 /* ======================
-   WATERMARK
+   WATERMARK (FINAL)
 ====================== */
 .certificate::before{
   content:"";
   position:absolute;
-  inset:-5%;
+  inset:0;
 
   background:
     url("../assets/watermark.png")
-    center center
-    no-repeat;
+    center 42%
+    / 72% no-repeat,
 
-  /* bigger + quieter */
-  background-size:78%;
+    url("../assets/watermark.png")
+    center 78%
+    / 55% no-repeat;
 
-  opacity:.022;
+  opacity:.07;
 
   filter:
     grayscale(100%)
-    blur(.2px);
+    blur(.15px);
+
+  mix-blend-mode:multiply;
 
   pointer-events:none;
 }
@@ -104,9 +106,9 @@ body{
 .badge{
   width:
     clamp(
-      165px,
-      20vw,
-      250px
+      120px,
+      16vw,
+      200px
     );
 
   height:auto;
@@ -115,9 +117,8 @@ body{
 
   margin:
     0 auto
-    22px;
+    20px;
 
-  /* helps transparent logo blend */
   mix-blend-mode:multiply;
 
   filter:
@@ -152,7 +153,6 @@ body{
     );
 
   margin-bottom:16px;
-
   line-height:1.5;
 }
 
@@ -167,12 +167,12 @@ h1{
       3.15rem
     );
 
-  line-height:1.08;
+  line-height:1.05;
   font-weight:700;
 
   color:#243447;
 
-  max-width:720px;
+  max-width:680px;
 
   margin:
     0 auto
@@ -234,12 +234,12 @@ h2{
 
   border:
     1px solid
-    rgba(202,166,65,.18);
+    rgba(202,166,65,.28);
 
   border-radius:999px;
 
   background:
-    rgba(212,175,55,.045);
+    rgba(212,175,55,.08);
 
   color:#78643d;
 
@@ -333,7 +333,8 @@ h2{
   padding-top:24px;
 
   border-top:
-    1px solid #ddd;
+    1px solid
+    rgba(36,52,71,.12);
 
   display:grid;
 
@@ -361,9 +362,7 @@ h2{
 
 .value{
   color:#223344;
-
   font-weight:600;
-
   line-height:1.5;
 }
 
@@ -412,15 +411,18 @@ h2{
     border-radius:18px;
   }
 
-  /* better full-page watermark */
+  /* MOBILE WATERMARK */
   .certificate::before{
-    inset:-10%;
-    background-size:95%;
-    opacity:.018;
+    background:
+      url("../assets/watermark.png")
+      center 44%
+      / 105% no-repeat;
+
+    opacity:.06;
   }
 
   .badge{
-    width:125px;
+    width:105px;
     margin-bottom:16px;
   }
 
@@ -438,8 +440,7 @@ h2{
         2.65rem
       );
 
-    line-height:1.1;
-
+    line-height:1.08;
     margin-bottom:20px;
   }
 
@@ -457,7 +458,6 @@ h2{
       );
 
     line-height:1.05;
-
     margin-bottom:14px;
   }
 
@@ -512,4 +512,4 @@ h2{
 
     word-break:break-word;
   }
-    }
+}
