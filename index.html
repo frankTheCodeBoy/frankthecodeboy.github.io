@@ -74,7 +74,25 @@
   <!-- Favicon -->
   <link
     rel="icon"
+    type="image/png"
     href="./assets/favicon.png"
+  />
+
+  <!-- Fonts -->
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
   />
 
   <!-- CSS -->
@@ -90,29 +108,33 @@
   <!-- Navigation -->
   <header class="navbar">
 
-    <div class="brand">
-      Copilot Innovation Framework
+    <div class="container nav-inner">
+
+      <div class="brand">
+        Copilot Innovation Framework
+      </div>
+
+      <nav>
+
+        <a href="#framework">
+          Framework
+        </a>
+
+        <a href="#labs">
+          Labs
+        </a>
+
+        <a href="#research">
+          Research
+        </a>
+
+        <a href="#network">
+          Network
+        </a>
+
+      </nav>
+
     </div>
-
-    <nav>
-
-      <a href="#framework">
-        Framework
-      </a>
-
-      <a href="#labs">
-        Labs
-      </a>
-
-      <a href="#research">
-        Research
-      </a>
-
-      <a href="#network">
-        Network
-      </a>
-
-    </nav>
 
   </header>
 
@@ -123,6 +145,7 @@
 
     <div class="container hero-layout">
 
+      <!-- Left -->
       <div class="hero-content">
 
         <div class="eyebrow">
@@ -130,19 +153,17 @@
         </div>
 
         <h1>
-          Applied Intelligence
-          for Systems,
-          Research &
-          Innovation
+          Applied Intelligence for Systems,
+          Research & Innovation
         </h1>
 
         <p class="hero-text">
           Copilot Innovation Framework is an
           independent initiative focused on
           applied intelligence, workflow
-          engineering, AI systems, and
-          technical experimentation through
-          Copilot Labs.
+          engineering, AI systems, structured
+          experimentation, and technical
+          innovation through Copilot Labs.
         </p>
 
         <div class="hero-actions">
@@ -165,12 +186,12 @@
 
       </div>
 
-      <!-- Hero Visual -->
+      <!-- Right -->
       <div class="hero-visual">
 
         <img
           src="./assets/network-mesh.png"
-          alt="Applied intelligence system visualization"
+          alt="Applied intelligence systems visualization"
           loading="lazy"
         />
 
@@ -195,15 +216,14 @@
         </span>
 
         <h2>
-          Coordinating
-          Applied Innovation
+          Coordinating Applied Innovation
         </h2>
 
       </div>
 
       <div class="card-grid">
 
-        <div class="glass-card">
+        <article class="glass-card">
 
           <h3>
             Copilot Innovation Framework
@@ -211,15 +231,16 @@
 
           <p>
             Supporting structured innovation
-            through technical systems,
-            applied intelligence, research
+            through applied intelligence,
+            technical systems, research
             coordination, and experimental
-            initiatives.
+            initiatives across emerging
+            digital environments.
           </p>
 
-        </div>
+        </article>
 
-        <div
+        <article
           id="labs"
           class="glass-card"
         >
@@ -229,15 +250,14 @@
           </h3>
 
           <p>
-            A practical experimentation
-            layer focused on workflow
-            systems, automation, prompt
-            architecture, intelligent
-            prototyping, and AI-assisted
-            optimization.
+            A practical experimentation layer
+            focused on workflow systems,
+            automation, prompt architecture,
+            intelligent prototyping, and
+            AI-assisted optimization.
           </p>
 
-        </div>
+        </article>
 
       </div>
 
@@ -325,7 +345,6 @@
 
       </div>
 
-      <!-- Global Network Visual -->
       <div class="network-image">
 
         <img
