@@ -412,11 +412,11 @@ h2{
   /* make watermark visible on phones */
   .certificate::before{
     background-size:96%;
-    opacity:.13;
+    opacity:.14;
   }
 
   .badge{
-    width:115px;
+    width:120px;
     margin-bottom:16px;
   }
 
