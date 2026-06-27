@@ -107,9 +107,9 @@ body{
 .badge{
   width:
     clamp(
-      120px,
-      16vw,
-      200px
+      130px,
+      17vw,
+      215px
     );
 
   height:auto;
@@ -412,11 +412,11 @@ h2{
   /* make watermark visible on phones */
   .certificate::before{
     background-size:96%;
-    opacity:.10;
+    opacity:.13;
   }
 
   .badge{
-    width:105px;
+    width:115px;
     margin-bottom:16px;
   }
 
