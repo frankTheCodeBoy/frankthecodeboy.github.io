@@ -592,3 +592,51 @@ h2{
   word-break:break-all;
   padding:0 10px;
 }
+
+
+/* =========================
+   MOBILE FIX (780px ONLY)
+   NON-DESTRUCTIVE PATCH
+========================= */
+
+@media (max-width:780px){
+
+  .signature{
+    margin:34px 0 24px;
+    padding-top:8px;
+  }
+
+  .signature-label{
+    font-size:.7rem;
+    letter-spacing:3px;
+  }
+
+  .signature-line{
+    width:140px;
+  }
+
+  .signature-name{
+    font-size:.92rem;
+  }
+
+  .signature-role{
+    font-size:.76rem;
+  }
+
+
+  .qr-block{
+    margin-top:32px;
+  }
+
+  .qr-box{
+    width:105px;
+    height:105px;
+  }
+
+
+  .hash-id{
+    font-size:.7rem;
+    padding:0 8px;
+  }
+
+}
