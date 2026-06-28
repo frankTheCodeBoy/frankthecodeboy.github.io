@@ -1,95 +1,72 @@
+/* ======================
+   RESET
+====================== */
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 
-html,
-body{
+html,body{
   width:100%;
   overflow-x:hidden;
 }
 
 body{
-  font-family:
-    "Segoe UI",
-    Arial,
-    sans-serif;
-
+  font-family:"Segoe UI", Arial, sans-serif;
   background:#eef2f7;
   min-height:100vh;
   padding:18px;
+  color:#111;
 }
 
 /* ======================
    CERTIFICATE CONTAINER
 ====================== */
+
 .certificate{
   position:relative;
-
   width:min(100%,980px);
   margin:auto;
 
-  background:
-    linear-gradient(
-      180deg,
-      #fffefb 0%,
-      #fdfcf8 100%
-    );
-
+  background:linear-gradient(180deg,#fffefb 0%,#fdfcf8 100%);
   border:3px solid #243447;
   border-radius:22px;
 
-  padding:
-    clamp(38px,4vw,66px)
-    clamp(24px,4vw,56px);
+  padding:clamp(38px,4vw,66px) clamp(24px,4vw,56px);
 
   text-align:center;
   overflow:hidden;
 
-  box-shadow:
-    0 14px 40px
-    rgba(0,0,0,.12);
+  box-shadow:0 14px 40px rgba(0,0,0,.12);
 }
 
-/* ======================
-   INNER GOLD FRAME
-====================== */
+/* INNER GOLD FRAME */
 .certificate::after{
   content:"";
   position:absolute;
   inset:14px;
-
   border:1.5px solid #caa641;
   border-radius:16px;
-
   pointer-events:none;
   z-index:1;
 }
 
 /* ======================
-   WATERMARK (FINAL FINAL)
+   WATERMARK (ONLY SYSTEM)
 ====================== */
+
 .certificate::before{
   content:"";
   position:absolute;
   inset:0;
 
-  background:
-    url("../assets/watermark.webp")
-    center center
-    no-repeat;
-
-  /* make it visible */
+  background:url("../assets/watermark.webp") center center no-repeat;
   background-size:78%;
 
-  /* THIS is the important fix */
   opacity:.12;
-
-  /* subtle premium tint */
-  filter:
-    sepia(.35)
-    saturate(.9);
+  filter:sepia(.35) saturate(.9);
 
   pointer-events:none;
   z-index:0;
@@ -102,32 +79,16 @@ body{
 }
 
 /* ======================
-   BADGE / LOGO
+   BADGE
 ====================== */
+
 .badge{
-  width:
-    clamp(
-      130px,
-      17vw,
-      215px
-    );
-
+  width:clamp(130px,17vw,215px);
   height:auto;
-
+  margin:0 auto 20px;
   display:block;
-
-  margin:
-    0 auto
-    20px;
-
-  filter:
-    drop-shadow(
-      0 8px 16px
-      rgba(0,0,0,.08)
-    );
-
-  transition:
-    transform .25s ease;
+  filter:drop-shadow(0 8px 16px rgba(0,0,0,.08));
+  transition:transform .25s ease;
 }
 
 .badge:hover{
@@ -135,173 +96,100 @@ body{
 }
 
 /* ======================
-   TOP LABEL
+   LABEL
 ====================== */
+
 .award-label{
   text-transform:uppercase;
   letter-spacing:4px;
-
   color:#9ca4af;
-
-  font-size:
-    clamp(
-      .72rem,
-      .9vw,
-      .88rem
-    );
-
+  font-size:clamp(.72rem,.9vw,.88rem);
   margin-bottom:16px;
-  line-height:1.5;
 }
 
 /* ======================
    TITLE
 ====================== */
-h1{
-  font-size:
-    clamp(
-      1.9rem,
-      3vw,
-      3.15rem
-    );
 
+h1{
+  font-size:clamp(1.9rem,3vw,3.15rem);
   line-height:1.08;
   font-weight:700;
-
   color:#243447;
-
   max-width:700px;
-
-  margin:
-    0 auto
-    20px;
-
+  margin:0 auto 20px;
   text-wrap:balance;
 }
 
 /* ======================
-   PRESENTED TO
+   PRESENTED
 ====================== */
+
 .presented{
   color:#777;
-
-  font-size:
-    clamp(
-      .95rem,
-      1.3vw,
-      1.08rem
-    );
-
+  font-size:clamp(.95rem,1.3vw,1.08rem);
   margin-bottom:8px;
 }
 
 /* ======================
-   RECIPIENT NAME
+   NAME
 ====================== */
+
 h2{
-  font-size:
-    clamp(
-      2.1rem,
-      4vw,
-      3.4rem
-    );
-
+  font-size:clamp(2.1rem,4vw,3.4rem);
   font-weight:700;
-
   color:#123b66;
-
   letter-spacing:-0.025em;
-
   margin-bottom:14px;
-
-  text-shadow:
-    0 2px 3px
-    rgba(0,0,0,.06);
+  text-shadow:0 2px 3px rgba(0,0,0,.06);
 }
 
 /* ======================
-   RECOGNITION PILL
+   PILL
 ====================== */
+
 .recognition-pill{
   display:inline-block;
-
   width:min(90%,400px);
-
-  padding:
-    12px 20px;
-
-  border:
-    1px solid
-    rgba(202,166,65,.28);
-
+  padding:12px 20px;
+  border:1px solid rgba(202,166,65,.28);
   border-radius:999px;
-
-  background:
-    rgba(212,175,55,.08);
-
+  background:rgba(212,175,55,.08);
   color:#78643d;
-
   font-size:.92rem;
-  font-weight:500;
-
-  line-height:1.35;
-
   margin-bottom:24px;
 }
 
 /* ======================
    DESCRIPTION
 ====================== */
+
 .description{
   max-width:720px;
-
   margin:auto;
-
   line-height:1.82;
-
   color:#4a4a4a;
-
-  font-size:
-    clamp(
-      .98rem,
-      1.35vw,
-      1.08rem
-    );
+  font-size:clamp(.98rem,1.35vw,1.08rem);
 }
 
 /* ======================
    DIVIDER
 ====================== */
+
 .divider{
   width:90px;
   height:1.5px;
-
-  margin:
-    32px auto;
-
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      #d4af37,
-      transparent
-    );
+  margin:32px auto;
+  background:linear-gradient(90deg,transparent,#d4af37,transparent);
 }
 
 /* ======================
    EXCELLENCE
 ====================== */
+
 .excellence h3{
   color:#223344;
-
   margin-bottom:18px;
-
-  font-size:
-    clamp(
-      1.05rem,
-      1.4vw,
-      1.25rem
-    );
 }
 
 .excellence ul{
@@ -310,211 +198,54 @@ h2{
 
 .excellence li{
   margin:10px 0;
-
   color:#555;
-
   line-height:1.72;
-
-  font-size:
-    clamp(
-      .95rem,
-      1.15vw,
-      1.03rem
-    );
 }
 
 /* ======================
    FOOTER
 ====================== */
+
 .footer-grid{
   margin-top:34px;
   padding-top:24px;
-
-  border-top:
-    1px solid
-    rgba(36,52,71,.12);
+  border-top:1px solid rgba(36,52,71,.12);
 
   display:grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(180px,1fr)
-    );
-
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
   gap:22px;
 }
 
 .label{
   text-transform:uppercase;
-
   letter-spacing:1.5px;
-
   color:#8e8e8e;
-
   font-size:.76rem;
-  font-weight:600;
-
   margin-bottom:8px;
 }
 
 .value{
   color:#223344;
   font-weight:600;
-  line-height:1.5;
 }
 
 /* ======================
    VERIFICATION
 ====================== */
+
 .verification{
   margin-top:22px;
-
   font-size:.84rem;
-
   color:#7d7d7d;
-
-  letter-spacing:.4px;
-
-  line-height:1.6;
 }
 
 /* ======================
-   MOBILE
-====================== */
-@media(max-width:768px){
-
-  body{
-    padding:12px;
-  }
-
-  .certificate{
-    width:100%;
-
-    border-radius:22px;
-    border-width:2.5px;
-
-    padding:
-      28px
-      20px
-      30px;
-
-    box-shadow:
-      0 8px 24px
-      rgba(0,0,0,.10);
-  }
-
-  .certificate::after{
-    inset:10px;
-    border-radius:18px;
-  }
-
-  /* make watermark visible on phones */
-  .certificate::before{
-    background-size:96%;
-    opacity:.14;
-  }
-
-  .badge{
-    width:125px;
-    margin-bottom:12px;
-  }
-
-  .award-label{
-    font-size:.72rem;
-    letter-spacing:4px;
-    margin-bottom:18px;
-  }
-
-  h1{
-    font-size:
-      clamp(
-        2rem,
-        8vw,
-        2.65rem
-      );
-
-    line-height:1.08;
-    margin-bottom:20px;
-  }
-
-  .presented{
-    font-size:1rem;
-  }
-
-  h2{
-    font-size:
-      clamp(
-        2.25rem,
-        9vw,
-        2.9rem
-      );
-
-    line-height:1.05;
-    margin-bottom:14px;
-  }
-
-  .recognition-pill{
-    width:min(90%,400px);
-
-    padding:
-      12px 18px;
-
-    font-size:.96rem;
-
-    margin-bottom:24px;
-  }
-
-  .description{
-    font-size:1.02rem;
-    line-height:1.85;
-  }
-
-  .divider{
-    width:100px;
-    margin:34px auto;
-  }
-
-  .excellence h3{
-    font-size:1.55rem;
-    margin-bottom:18px;
-  }
-
-  .excellence li{
-    font-size:1.05rem;
-    line-height:1.75;
-    margin:10px 0;
-  }
-
-  .footer-grid{
-    grid-template-columns:1fr;
-
-    gap:22px;
-
-    margin-top:34px;
-    padding-top:26px;
-  }
-
-  .verification{
-    margin-top:22px;
-
-    font-size:.9rem;
-
-    line-height:1.7;
-
-    word-break:break-word;
-  }
-}
-
-
-/* =========================
    SIGNATURE
-========================= */
+====================== */
 
 .signature{
   text-align:center;
   margin:30px 0;
-  padding-top:10px;
 }
 
 .signature-label{
@@ -527,7 +258,7 @@ h2{
 .signature-line{
   width:160px;
   height:1px;
-  margin:0 auto 12px auto;
+  margin:0 auto 12px;
   background:rgba(0,0,0,0.25);
 }
 
@@ -542,20 +273,9 @@ h2{
   margin-top:6px;
 }
 
-
-/* =========================
-   WATERMARK SAFETY
-========================= */
-
-.watermark{
-  pointer-events:none;
-  user-select:none;
-}
-
-
-/* =========================
-   QR BLOCK
-========================= */
+/* ======================
+   QR
+====================== */
 
 .qr-block{
   text-align:center;
@@ -577,13 +297,11 @@ h2{
 .qr-box img{
   width:100%;
   height:100%;
-  object-fit:cover;
 }
 
-
-/* =========================
+/* ======================
    HASH ID
-========================= */
+====================== */
 
 .hash-id{
   font-size:.75rem;
@@ -593,50 +311,29 @@ h2{
   padding:0 10px;
 }
 
+/* ======================
+   MOBILE (ONLY ONE SYSTEM)
+====================== */
 
-/* =========================
-   MOBILE FIX (780px ONLY)
-   NON-DESTRUCTIVE PATCH
-========================= */
+@media (max-width:768px){
 
-@media (max-width:780px){
+  body{ padding:12px; }
 
-  .signature{
-    margin:34px 0 24px;
-    padding-top:8px;
+  .certificate{
+    padding:28px 20px 30px;
+    border-width:2.5px;
   }
 
-  .signature-label{
-    font-size:.7rem;
-    letter-spacing:3px;
+  .certificate::before{
+    background-size:96%;
+    opacity:.14;
   }
 
-  .signature-line{
-    width:140px;
-  }
+  h2{ font-size:2.2rem; }
 
-  .signature-name{
-    font-size:.92rem;
-  }
+  .signature-line{ width:140px; }
 
-  .signature-role{
-    font-size:.76rem;
-  }
+  .qr-box{ width:105px; height:105px; }
 
-
-  .qr-block{
-    margin-top:32px;
-  }
-
-  .qr-box{
-    width:105px;
-    height:105px;
-  }
-
-
-  .hash-id{
-    font-size:.7rem;
-    padding:0 8px;
-  }
-
+  .verification{ font-size:.9rem; word-break:break-word; }
 }
